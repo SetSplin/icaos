@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stack</title>
+        <link rel="stylesheet" href="static/reboot.css">
+        <link rel="stylesheet" href="static/grid.css">
+        <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/main.css">
+        <link rel="stylesheet" href="static/codemirror.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="/static/codemirror.js"></script>
+        <script src="/static/gas.js"></script>
+        <script src="/static/clike.js"></script>
+        <script src="/static/matchbrackets.js"></script>
+        <script src="/static/closebrackets.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <span>iАКОС notebook</span>
+                <div class="run" id="run">RUN</div>
+            </div>
+        </div>
+
+        <div class="container main">
+
+            <div class="code">
+                <div class="title">ASM</div>
+                <textarea name="asm" id="asm" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="code">
+                <div class="title">C</div>
+                <textarea name="c" id="c" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="code">
+                <div class="title">Result</div>
+                <div id="result"></div>
+            </div>
+
+
+            <div class="footer">by Igor Tarakanov</div>
+        </div>
+
+        <script src="/static/main.js"></script>
+    </body>
+</html>
